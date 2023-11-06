@@ -1,0 +1,7 @@
+{
+  "name": "mytvlist",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
