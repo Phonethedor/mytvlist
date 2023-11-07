@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>registrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registrar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-input label="Correo" labelPlacement="floating" type="email" [(ngModel)]="email"></ion-input>
+    <ion-input label="Nombre" labelPlacement="floating" type="text" [(ngModel)]="nombre"></ion-input>
+    <ion-input label="Contraseña" labelPlacement="floating" type="password" [(ngModel)]="password"></ion-input>
+  </ion-list>
+  <ion-button id="btn-login" (click)="registrar()">Registrar</ion-button>
+  <p>¿estas registrado? <a target="_blank" (click)="volver()">Volver</a></p>
+</ion-content>

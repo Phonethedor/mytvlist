@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1>Series de {{email}}</h1>
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-img src="./assets/images/serie1.jpg" (click)="verSerie()"></ion-img>
+        </ion-col>
+        <ion-col>
+          <p>The Twilight Zone</p>
+          <br>
+          <p>Vistos</p>
+          <p>10/156</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <a target="_blank" (click)="volver()">Volver</a>
+  </div>
+
+</ion-content>
