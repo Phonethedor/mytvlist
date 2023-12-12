@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'registrar',
     loadChildren: () => import('./pages/registrar/registrar.module').then( m => m.RegistrarPageModule)
   },
+  {
+    path: 'api-propia',
+    loadChildren: () => import('./pages/api-propia/api-propia.module').then( m => m.ApiPropiaPageModule)
+  },
 ];
 
 @NgModule({

@@ -44,3 +44,10 @@ export class ListaPage implements OnInit {
   }
 
 }
+
+export class Lista {
+  constructor(
+    public nombre: string,
+    public descripcion: string
+  ){}
+}
