@@ -5,18 +5,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <h1>Series de {{email}}</h1>
+  <h1>Lista de {{correo}}</h1>
   <div class="container">
-    <ion-grid>
-      <ion-row>
+    <ion-grid>      
+      <ion-row *ngFor="let x of arrayseries">
         <ion-col>
-          <ion-img src="./assets/images/serie1.jpg" (click)="verSerie()"></ion-img>
+          <p>{{x.id_serie}}</p>
         </ion-col>
         <ion-col>
-          <p>The Twilight Zone</p>
+          <p>{{x.nombre_serie}}</p>
+        </ion-col>
+        <ion-col>
+          <a target="_blank" (click)="verSerie(x.id_serie)">ver detalles</a>
           <br>
-          <p>Vistos</p>
-          <p>10/156</p>
+          <a target="_blank" (click)="eliminar()">eliminar</a>
         </ion-col>
       </ion-row>
     </ion-grid>

@@ -10,16 +10,19 @@
       <ion-title size="large">serie</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-card>
-    <img src="./assets/images/serie1.jpg" />
+  <ion-card *ngFor="let x of arrayseries">
+    <img src="{{x.imagen}}" />
     <ion-card-header>
-      <ion-card-title>The Twilight Zone</ion-card-title>
-      <ion-card-subtitle>Vistos : 10/156</ion-card-subtitle>
+      <ion-card-title>{{x.nombre_serie}}</ion-card-title>
+      <ion-card-subtitle>Temporadas : {{x.temporadas}}</ion-card-subtitle>
+      <ion-card-subtitle>Capitulos : {{x.capitulos}}</ion-card-subtitle>
     </ion-card-header>
   
     <ion-card-content>
-      The Twilight Zone (en inglés: «La zona crepuscular»)1​ —conocida en español como La dimensión desconocida, Dimensión desconocida, En los límites de la realidad o La quinta dimensión— es una serie de televisión de antología estadounidense dedicada a la ciencia ficción, la fantasía y el terror.2​ Cada episodio muestra un relato que plantea dilemas morales, cuestiona al espectador y lo confronta con su propia existencia, a menudo rematado por un final sorprendente.
+      {{x.descripcion}}
     </ion-card-content>
   </ion-card>
   <a target="_blank" (click)="volver()">Volver</a>
+  <br>
+  <a target="_blank" (click)="eliminar()">Eliminar</a>
 </ion-content>

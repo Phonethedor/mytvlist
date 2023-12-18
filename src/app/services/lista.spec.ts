@@ -9,9 +9,9 @@ describe('Lista', () => {
     let lista = new Lista();
     lista.id_lista = 1;
     lista.id_usuario = 1;
-    lista.nombre = "Lista 1";
+    lista.nombre_lista = "Lista 1";
     expect(lista.id_lista).toEqual(1);
     expect(lista.id_usuario).toEqual(1);
-    expect(lista.nombre).toEqual("Lista 1");
+    expect(lista.nombre_lista).toEqual("Lista 1");
   });
 });
